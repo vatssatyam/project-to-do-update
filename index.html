@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cookie&family=Dancing+Script:wght@600&family=Great+Vibes&family=Playfair+Display:ital,wght@1,500&family=Roboto+Slab:wght@100;200;500&family=Sacramento&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./Style.css" />
+  </head>
+  <body>
+    <div class="mainContainer">
+      <header class="headingFirstPage">
+        <div class="display">
+          <h1>Task <span class="list">List</span></h1>
+          <div class="display addBtn addSubtaskCon">
+            <button class="btn1 addTaskPopUp">+</button>
+            <h2 class="addTaskPopUp2"><span> Add Item</span></h2>
+          </div>
+        </div>
+        <div class="checkItem">No Items in the toDo List</div>
+        <div class="toDoCardContainers" id="toDoCardContainers"></div>
+      </header>
+
+      <header class="headingSecondPage">
+        <div class="display h2InnerContainner">
+          <div class="display backContainner1">
+            <button class="backBtn">
+              <img class="imgBack" src="./back (1).png" alt="" />
+            </button>
+            <h2 class="backBtn2">
+              <span class="backText">BACK</span>
+            </h2>
+          </div>
+          <div class="headingSecondPageText"></div>
+          <button class="btn1 addTaskPopUpSecondPage">+</button>
+        </div>
+        <div class="toDoCardContainer2"></div>
+      </header>
+
+      <section>
+        <div class="addTask display">
+          <div class="adt">ADD NEW LIST</div>
+          <input class="cardText" type="text" placeholder="Add New List" />
+          <div>
+            <button class="btn2 addBtn addTaskButton">Add</button>
+            <button class="btn2 closeBtn closeTaskButton" onclick="">
+              Close
+            </button>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="display addItem">
+          <div class="adt">ADD NEW ITEM</div>
+          <input class="cardItem" type="text" placeholder="Add New Item" />
+          <div>
+            <button id="addBtn2" class="btn2 addBtn2 addSubtaskConButton">
+              Add
+            </button>
+            <button class="btn2 closeBtn2 closeSubtaskConButton">Close</button>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="./index.js"></script>
+  </body>
+</html>
